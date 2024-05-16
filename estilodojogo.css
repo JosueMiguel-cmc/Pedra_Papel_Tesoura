@@ -1,0 +1,94 @@
+
+html{
+    height: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(46, 192, 180) 17.8% ,rgb(0, 82, 85)100.2%);
+    background-repeat:no-repeat;
+    background-size:auto;
+}
+#Player{
+    width: 100px;
+    height: 150px;
+    background-image: url("Player.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#CPU{
+    width: 100px;
+    height: 150px;
+    background-image: url("CPU.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    padding-top:10% ;
+}
+h2{
+    border: solid 2px black;
+    padding: 20px;
+    border-radius: 1rem;
+    margin: 5px;
+}
+#partedomeio{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#partedomeio button{
+
+    padding: 10px;
+    border-radius: 1rem;
+
+}
+
+#areaCPU, #areaPlayer{
+    text-align: center;
+}
+
+#teladerrota{
+    position: absolute;
+    background: radial-gradient( circle farthest-corner at 10% 20%, rgba(212, 47, 47, 0.900) 30% ,rgb(51, 2, 1, 0.900)100.2%);
+    color: white;
+    border: solid 3px black;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    width: 50%;
+    
+}
+#telaganhou{
+    position: absolute;
+    background: radial-gradient( circle farthest-corner at 10% 20%, rgb(61, 212, 47, 0.900) 30% ,rgb(11, 51, 1, 0.900)100.2%);
+    color:white;
+    border: solid 3px black;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    width: 50%;
+}
+#telaempate{
+    position: absolute;
+    background: radial-gradient( circle farthest-corner at 10% 20%, rgb(138, 138, 138, 0.900) 30% ,rgb(27, 27, 27, 0.900)100.2%);
+    color:white;
+    border: solid 3px black;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    width: 50%;
+}

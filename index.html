@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegue as moedas</title>
+    <link rel="stylesheet" href="estilodojogo.css">
+    <title>P.P.T.</title>
+</head>
+<body>
+    <div id="areaPlayer">
+    <h3>Player</h3>
+    <div id="Player">
+
+    </div>
+    <select id="escolha">
+        <Option disabled selected>Escolha</Option>
+        <Option value="1">Pedra</Option>
+        <Option value="2">Papel</Option>
+        <Option value="3">Tesoura</Option>
+    </select>
+</div>
+
+
+<div id="partedomeio">
+<h2>Pedra<br>Papel<br>Tesoura</h2>
+<button id="Play" onclick="jogadaCPU()">start</button>
+</div>
+
+    <div id="areaCPU">
+    <h3>CPU</h3>
+    <div id="CPU">
+
+    </div>
+    </div>
+
+    <div id="teladerrota">
+        <h1>Voce perdeu!</h1>
+        <button id="btnrei1">Continuar</button>
+    </div>
+    <div id="telaganhou">
+        <h1>Voce ganhou!</h1>
+        <button id="btnrei2">Continuar</button>
+    </div>
+    <div id="telaempate">
+        <h1>Voces empataram!</h1>
+        <button id="btnrei3">continuar</button>
+    </div>
+
+    <script src="funçoesdojogo.js"></script>
+</body>
+</html>
